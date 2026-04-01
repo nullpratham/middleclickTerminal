@@ -75,8 +75,8 @@ class GestureHandler:
         self.session_finger_count = 0
         
         # Heuristics
-        self.max_tap_duration = 0.3  # 300ms max for a tap
-        self.swipe_threshold = 0.04 # Normalized distance threshold for a swipe
+        self.max_tap_duration = 0.5  # Increased from 0.3
+        self.swipe_threshold = 0.05 # Increased from 0.04
 
     def handle_contacts(self, contacts_ptr, count):
         if count > 0:
